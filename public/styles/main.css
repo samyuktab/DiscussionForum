@@ -1,0 +1,161 @@
+div#header {
+    background-color: #663333;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    max-width:100%;
+
+}
+body {
+   background-color: #FF9966;
+    font-size: 110%;
+}
+
+ul#navbar {
+    text-align: center;
+    padding: 1%;
+    list-style-type: none;
+    background-color:#663333;
+    font-size: 110%;
+}
+
+ul#navbar a {
+    color: #FF9966;
+    width: 100%;
+}
+
+ul#navbar li {
+    display:inline;
+    margin: 2%;
+}
+div#header h1{
+    font-family: sans-serif;
+    color:#FF9966;
+}
+
+.content{
+   float:left;
+    margin-left: 14%;
+    font-size: 125%;
+    padding: 3%;
+}
+
+.viewans{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+
+.fakeLink1{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+.fakeLink2{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+
+.fakeLink3{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+.fakeLink4{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+.fakeLink5{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+.fakeLink6{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+.fakeLink7{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+.fakeLink8{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+.fakeLink9{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+.fakeLink10{
+    cursor: pointer;
+    color : #000066;
+    text-decoration: underline;
+}
+
+
+
+.hidden1{
+    display: none;
+}
+
+.hidden2{
+    display: none;
+}
+
+
+.hidden3{
+    display: none;
+}
+
+
+.hidden4{
+    display: none;
+}
+
+section.logit{
+    padding: 4%;
+    text-align: center;
+}
+
+.signup{
+    padding: 4%;
+    text-align: center;
+}
+
+div#leftnav {
+    float:left;
+    margin: auto;
+}
+
+textarea.contents {
+    margin-top: 2% ;
+    margin-left: 14%;
+    align:center;
+    background-color:#663333;
+    color:#FF9966;
+}
+
+p#textQs{
+    margin-left: 32%;
+    align:center;
+}
+
+input{
+width: 100px;
+    height:20px;
+    background-color:#663333;
+    color:#FF9966;
+}
+
+button{
+    width: 100px;
+    height:20px;
+    background-color:#663333;
+    color:#FF9966;
+}

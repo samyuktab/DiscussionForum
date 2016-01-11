@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+<div id="header">
+    <h1>RIT Discussion Forum</h1>
+</div>
+
+<section class="signup">
+    <form id="form_id" method="post" name="myform">
+      <p>  <label>User Name :</label>
+        <input type="text" name="username" id="username"/> </p>
+        <p> <label>Password :</label>
+       <input type="password" name="password" id="password"/> </p>
+       <p> <label>Email ID :</label>
+        <input type="text" name="emailid" id="emailid"/></p>
+       <p> <label> Interest :</label>
+        <input type="text" name="interest" id="interest"/></p>
+       <p> <label>ID :</label>
+        <input type="text" name="id" id="id"/> </p>
+       <p> <input type="button" value="Register" id="submit" onclick="register();"/> </p>
+
+    </form>
+</section>
+</body>
+</html>

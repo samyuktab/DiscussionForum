@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="forumApp">
+<head>
+    <meta charset="UTF-8">
+    <title>RIT Discussion Forum</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="lib/jquery-2.1.4.js"></script>
+
+</head>
+<body>
+
+<div id="header">
+    <h1>RIT Discussion Forum</h1>
+    <nav>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="questions.html">Questions</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="container" data-ng-controller="ForumController">
+    <form name="myForm" data-ng-submit="askQuestion()">
+        <label>Search a Question:</label>
+        <input type ="text" ng-model="keyword" ng-keydown="getData()" >
+    <textarea class="contents" ng-model="question" rows="8" cols="100">
+        </textarea>
+    <input type="Submit" value="AskQuestion"/>
+    </form>
+    <ul data-ng-repeat="questions in questionslist track by $index">
+        <li name="qid"  ng-click="viewAnswer($index)">
+            <span  class="viewans">{{questions.Question_Text}}</span>
+            <div ng-show="questions.answerShow"><b>Answer : </b> {{questions.answerText}}</div>
+            <p><textarea class="contents" ng-if="questions.answerNotAvailable" ng-model="questions.answerText" cols="40" rows="10"></textarea></p>
+            <button ng-if="questions.answerNotAvailable" ng-click="writeAnswer(questions.Question_ID, questions.answerText)">Answer Question!</button>
+            <button ng-if="!questions.answerNotAvailable" ng-click="showUpdateAnswer(questions.Question_ID)">Update Answer!</button>
+            <textarea class="contents" ng-if="questions.updateAnswerShow" ng-model="questions.newAnswer"  cols="40" rows="10"></textarea>
+            <button ng-if="questions.updateAnswerShow" ng-click="updateAnswer(questions.Question_ID, questions.newAnswer)">Submit Updated Answer!</button>
+        </li>
+    </ul>
+</div>
+<script src="lib/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+
+</body>
+</html>
